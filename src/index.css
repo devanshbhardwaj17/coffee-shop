@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: 'Fraunces', serif;
+}
+
+/* Thermal-receipt "ticket" look used for cart / order confirmations */
+.ticket {
+  position: relative;
+  background: #F5EDE4;
+  color: #1C1410;
+}
+.ticket::before,
+.ticket::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-image: radial-gradient(circle, #140D09 3px, transparent 3.5px);
+  background-size: 14px 14px;
+  background-position: -3px center;
+}
+.ticket::before {
+  top: -5px;
+}
+.ticket::after {
+  bottom: -5px;
+}
+
+/* thin scrollbar for cart drawer */
+.thin-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.thin-scroll::-webkit-scrollbar-thumb {
+  background: #4E3A2E;
+  border-radius: 4px;
+}
+
+@keyframes steam {
+  0% { transform: translateY(0) scaleX(1); opacity: 0.5; }
+  50% { transform: translateY(-6px) scaleX(1.15); opacity: 0.9; }
+  100% { transform: translateY(-12px) scaleX(1); opacity: 0; }
+}
+.steam-1 { animation: steam 2.4s ease-in-out infinite; }
+.steam-2 { animation: steam 2.4s ease-in-out infinite; animation-delay: 0.8s; }
+.steam-3 { animation: steam 2.4s ease-in-out infinite; animation-delay: 1.6s; }

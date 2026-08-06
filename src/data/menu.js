@@ -1,0 +1,88 @@
+export const CATEGORIES = ['Hot Brews', 'Cold Brews', 'Specialty']
+
+export const MENU = [
+  {
+    id: 'espresso',
+    name: 'Espresso',
+    category: 'Hot Brews',
+    price: 110,
+    desc: 'A tight, concentrated shot pulled from a dark-roast blend.',
+  },
+  {
+    id: 'americano',
+    name: 'Americano',
+    category: 'Hot Brews',
+    price: 140,
+    desc: 'Espresso lengthened with hot water for a lighter body.',
+  },
+  {
+    id: 'cappuccino',
+    name: 'Cappuccino',
+    category: 'Hot Brews',
+    price: 170,
+    desc: 'Equal parts espresso, steamed milk, and airy foam.',
+  },
+  {
+    id: 'latte',
+    name: 'Cafe Latte',
+    category: 'Hot Brews',
+    price: 180,
+    desc: 'Espresso with steamed milk and a thin layer of foam.',
+  },
+  {
+    id: 'filter-coffee',
+    name: 'South Indian Filter Coffee',
+    category: 'Hot Brews',
+    price: 90,
+    desc: 'Slow-filtered decoction with milk, served the traditional way.',
+  },
+  {
+    id: 'mocha',
+    name: 'Mocha',
+    category: 'Hot Brews',
+    price: 190,
+    desc: 'Espresso and steamed milk with real dark chocolate.',
+  },
+  {
+    id: 'cold-brew',
+    name: 'Cold Brew',
+    category: 'Cold Brews',
+    price: 180,
+    desc: 'Steeped for 18 hours, served over ice. Naturally sweet.',
+  },
+  {
+    id: 'iced-latte',
+    name: 'Iced Latte',
+    category: 'Cold Brews',
+    price: 190,
+    desc: 'Chilled espresso and cold milk poured over ice.',
+  },
+  {
+    id: 'cold-coffee',
+    name: 'Classic Cold Coffee',
+    category: 'Cold Brews',
+    price: 160,
+    desc: 'Blended coffee, milk, sugar, and a scoop of ice cream.',
+  },
+  {
+    id: 'frappe',
+    name: 'Caramel Frappe',
+    category: 'Cold Brews',
+    price: 210,
+    desc: 'Blended iced coffee with caramel and whipped cream.',
+  },
+  {
+    id: 'affogato',
+    name: 'Affogato',
+    category: 'Specialty',
+    price: 220,
+    desc: 'A scoop of vanilla gelato drowned in a hot espresso shot.',
+  },
+  {
+    id: 'flat-white',
+    name: 'Flat White',
+    category: 'Specialty',
+    price: 190,
+    desc: 'A double ristretto with velvety micro-foamed milk.',
+  },
+]
